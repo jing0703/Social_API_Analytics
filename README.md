@@ -98,7 +98,7 @@ Sentiment_DF.head()
 </table>
 </div>
 
-![png](output_5_0.png)
+![png](News Mood/Overall Media Sentiment.png)
 
 ![png](output_7_0.png)
 
