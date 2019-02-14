@@ -15,12 +15,10 @@ Libraries used: tweepy, pandas, numpy, matplotlib, json,time and VADER.
 Sentiment_DF=pd.DataFrame.from_dict(Sentiment_array)
 # Removing the '@' from Media column in the data frame
 Sentiment_DF['Media'] = Sentiment_DF['Media'].map(lambda x: x.lstrip('@'))
-
 # Re_arranging the order of columns before saving into CSV file
 Sentiment_DF=Sentiment_DF[["Media","Date","Tweet Text","Compound","Positive","Negative","Neutral","Tweets Ago"]]
 # Storing into a CSV File\
 Sentiment_DF.to_csv("Output/Media_SentimentAnalysis.csv")
-
 Sentiment_DF.head()
 ```
 <div>
@@ -98,9 +96,9 @@ Sentiment_DF.head()
 </table>
 </div>
 
-![png](<News Mood>/<Overall Media Sentiment.png>)
+![png](Media_Sentiment_Analysis/Sentiment.png)
 
-![png](output_7_0.png)
+![png](Media_Sentiment_Analysis/Overall.png)
 
 
 ## Project2: PlotBot
@@ -113,9 +111,8 @@ For example, when a user tweets, **"@PlotBot Analyze: @CNN,"** it will trigger a
 
 A plot from the sentiment analysis is then tweeted to the PlotBot5 twitter feed. See below for examples of scatter plots you will generate:
 
-![@juanitasoranno.png](Images/@juanitasoranno.png)
-![@nancypwong.png](Images/@nancypwong.png)
-![nytimes.png](Images/nytimes.png)
+![png](PlotBot/INCIndia.png)
+![png](PlotBot/UN.png)
 
 Features of PlotBot:
 
